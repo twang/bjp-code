@@ -10,6 +10,10 @@ public class Stock {
         totalShares = 0;
         totalCost = 0.0;
     }
+    
+    public Stock() {
+        this("default");
+    }
 
     // Returns the total shares purchased of this stock.
     public int getTotalShares() {
@@ -26,5 +30,9 @@ public class Stock {
     public void purchase(int shares, double pricePerShare) {
         totalShares += shares;
         totalCost += shares * pricePerShare;
+    }
+        
+    public String toString() {
+       return symbol;
     }
 }

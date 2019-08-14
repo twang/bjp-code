@@ -4,10 +4,14 @@ public class DividendStock extends Stock {
 
     // Constructs a new dividend stock with the given symbol
     // and no shares purchased.
-    public DividendStock(String theSymbol) {
-        super(theSymbol);  // call Stock constructor
+   public DividendStock(String theSymbol) {
+        super();
         dividends = 0.0;
     }
+    
+    /* public DividendStock() {
+        super();
+    } */
     
     // Returns the total profit or loss earned on this stock,
     // including profits made from dividends.
@@ -18,5 +22,5 @@ public class DividendStock extends Stock {
     // Records a dividend of the given amount per share.
     public void payDividend(double amountPerShare) {
         dividends += amountPerShare * getTotalShares();
-    }
+    } 
 }
