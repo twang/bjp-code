@@ -23,7 +23,7 @@ public abstract class ShareAsset implements Asset {
     }
     
     // Returns the current market value of this asset.
-    // public abstract double getMarketValue();
+    public abstract double getMarketValue();
     
     // Returns the profit earned on shares of this asset.
     public double getProfit() {
